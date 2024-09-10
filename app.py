@@ -18,4 +18,4 @@ if build_histogram:
 if build_scatter:
     st.write('Construir un gráfico de dispersión para los anuncios de venta de vehiculos')
     fig_2 = px.scatter(car_data, x="odometer", y="price")
-    st.plotly_chart(fig_2, use_container_width=True) 
+    st.plotly_chart(fig_2, use_container_width=True)
