@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
-car_data = pd.read_csv(r'C:\Users\macaa\OneDrive\Escritorio\TripleTen\Sprint 6\Proyecto\Proyecto-sprint-6\vehicles_us.csv')
+car_data = pd.read_csv('./vehicles_us.csv')
 
 st.header('Proyecto 6: desarrollo de una aplicación web')
 
@@ -18,4 +18,4 @@ if build_histogram:
 if build_scatter:
     st.write('Construir un gráfico de dispersión para los anuncios de venta de vehiculos')
     fig_2 = px.scatter(car_data, x="odometer", y="price")
-    st.plotly_chart(fig_2, use_container_width=True)
+    st.plotly_chart(fig_2, use_container_width=True) 
